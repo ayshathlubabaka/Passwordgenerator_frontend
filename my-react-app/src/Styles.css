@@ -1,0 +1,144 @@
+* {
+    font-family: Arial;
+  }
+  
+  .container {
+    background-color: #24232b;
+    padding: 24px;
+    display: flex;
+    flex-direction: column; /* Ensure flex items are stacked vertically */
+  align-items: center;
+  height: 100vh;
+    
+  }
+
+  .top-row {
+    width: 100%; 
+    margin: 25px;
+  }
+  
+  .bottom-row {
+    display: flex; 
+    width: 100%;
+  }
+
+  .header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2a8b8b;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .copyBtn {
+    height: 30px;
+    font-size: 10px;
+  }
+  
+  .charlength {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 24px;
+  }
+  
+  .charlength span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+  }
+  
+  .checkboxes {
+    display: flex; /* Switch to flexbox layout */
+    gap: 250px; /* Adjust as needed */
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .checkboxes div {
+    gap: 5px;
+    padding-bottom: 25px;
+  }
+  
+  .generateBtn {
+    width: 100%;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  .errorMessage {
+    color: red;
+    padding-bottom: 5px;
+  }
+  
+  .password-strength {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    color: white;
+  }
+
+
+.instructions h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.instructions p {
+  margin-bottom: 10px;
+}
+
+.instructions ol {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+.instructions ol li {
+  margin-bottom: 5px;
+}
+
+.instructions strong {
+  font-weight: bold;
+}
+.instructions-container {
+  flex: 1;
+  max-width: 40%;
+  padding-right: 20px;
+}
+
+.instructions {
+  background-color: #42444e;
+  margin-bottom: 40px;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.password-section {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.password {
+  background-color: #65666a; /* Choose your desired background color */
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Adjust as needed */
+}
