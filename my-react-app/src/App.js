@@ -2,11 +2,11 @@ import './Styles.css'
 import react, {useEffect, useState} from 'react'
 import Button from './Components/Button';
 import Checkbox from './Components/Checkbox';
+import PasswordGeneration from './Components/PasswordGeneration';
 
 function App() {
 
   const [length, setLength] = useState(4);
-  const [password, setPassword] = useState('');
   const [strength, setStrength] = useState('medium');
   const [copied, setCopied] = useState(false);
 
@@ -20,8 +20,9 @@ function App() {
     }, 10000);
   };
 
+  // const {password, generatePassword} = PasswordGeneration();
+
   const generatePassword = async () => {
-    console.log(strength, length)
     try {
       const response = await fetch('http://127.0.0.1:8000/api/generate-password/', {
         method: 'POST',
@@ -32,7 +33,6 @@ function App() {
       });
       const data = await response.json();
       setPassword(data.password);
-      console.log(data.password)
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -109,6 +109,7 @@ function App() {
       
       <Button
         text="Generate Password"
+        // onClick={()=>generatePassword(strength,length)}
         onClick={generatePassword}
         customClass="generateBtn"
       />
